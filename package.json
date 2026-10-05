@@ -1,0 +1,16 @@
+{
+  "name": "dsh-remote-gate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "localhost HTTP gate for harness-bridge: create/send/approve/title dsh sessions in-process (web profile)",
+  "main": "entry.js",
+  "exports": {
+    ".": "./entry.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

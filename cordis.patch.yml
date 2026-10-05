@@ -1,0 +1,6 @@
+# dsh-remote-gate bundle layer: mount the gate plugin into the composition.
+# The plugin's apply() self-registers its listeners and the localhost HTTP gate.
+- insert:
+    - id: remote-gate
+      name: dsh-remote-gate
+      config: {}
